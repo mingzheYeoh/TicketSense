@@ -1,0 +1,48 @@
+{
+  "model": "distilbert",
+  "backend": "distilbert",
+  "test_accuracy": 0.9255526657997399,
+  "test_macro_f1": 0.9255421432072084,
+  "test_weighted_f1": 0.9256256426510543,
+  "worst_class_recall": 0.6923076923076923,
+  "worst_intents": [
+    "pending_transfer",
+    "declined_transfer",
+    "card_payment_not_recognised",
+    "balance_not_updated_after_bank_transfer",
+    "why_verify_identity"
+  ],
+  "review_threshold": 0.7832702398300171,
+  "threshold_target_accuracy": 0.95,
+  "val_auto_routed_share": 0.9354677338669335,
+  "val_auto_routed_accuracy": 0.9502673796791444,
+  "test_auto_routed_share": 0.9382314694408322,
+  "test_auto_routed_accuracy": 0.9553014553014553,
+  "top_confusions": [
+    {
+      "true_intent": "why_verify_identity",
+      "predicted_intent": "verify_my_identity",
+      "count": 7
+    },
+    {
+      "true_intent": "pending_transfer",
+      "predicted_intent": "transfer_not_received_by_recipient",
+      "count": 5
+    },
+    {
+      "true_intent": "declined_transfer",
+      "predicted_intent": "declined_card_payment",
+      "count": 4
+    },
+    {
+      "true_intent": "card_delivery_estimate",
+      "predicted_intent": "card_arrival",
+      "count": 4
+    },
+    {
+      "true_intent": "card_arrival",
+      "predicted_intent": "card_delivery_estimate",
+      "count": 4
+    }
+  ]
+}

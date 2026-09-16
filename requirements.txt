@@ -1,0 +1,13 @@
+# For GPU training install torch from the CUDA index first:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu126
+torch>=2.6
+transformers>=5.0
+datasets>=4.0
+accelerate
+scikit-learn>=1.5
+joblib
+pandas
+numpy
+matplotlib
+fastapi
+uvicorn[standard]

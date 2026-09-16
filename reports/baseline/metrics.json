@@ -1,0 +1,48 @@
+{
+  "model": "baseline",
+  "backend": "tfidf+logreg",
+  "test_accuracy": 0.9050715214564369,
+  "test_macro_f1": 0.90501325902883,
+  "test_weighted_f1": 0.9050322574589132,
+  "worst_class_recall": 0.625,
+  "worst_intents": [
+    "virtual_card_not_working",
+    "balance_not_updated_after_bank_transfer",
+    "declined_transfer",
+    "pending_transfer",
+    "top_up_reverted"
+  ],
+  "review_threshold": 0.44242832441270386,
+  "threshold_target_accuracy": 0.95,
+  "val_auto_routed_share": 0.8639319659829915,
+  "val_auto_routed_accuracy": 0.9502026635784597,
+  "test_auto_routed_share": 0.8725617685305592,
+  "test_auto_routed_accuracy": 0.9552906110283159,
+  "top_confusions": [
+    {
+      "true_intent": "virtual_card_not_working",
+      "predicted_intent": "get_disposable_virtual_card",
+      "count": 7
+    },
+    {
+      "true_intent": "pending_top_up",
+      "predicted_intent": "top_up_failed",
+      "count": 5
+    },
+    {
+      "true_intent": "change_pin",
+      "predicted_intent": "get_physical_card",
+      "count": 4
+    },
+    {
+      "true_intent": "card_arrival",
+      "predicted_intent": "card_delivery_estimate",
+      "count": 4
+    },
+    {
+      "true_intent": "balance_not_updated_after_bank_transfer",
+      "predicted_intent": "transfer_not_received_by_recipient",
+      "count": 4
+    }
+  ]
+}

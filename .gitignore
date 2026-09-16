@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Rebuilt by the training scripts in under four minutes; 257 MB for the fine-tune.
+models/
